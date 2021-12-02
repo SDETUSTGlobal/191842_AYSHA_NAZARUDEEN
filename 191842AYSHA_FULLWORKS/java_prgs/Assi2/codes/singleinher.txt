@@ -1,0 +1,22 @@
+ class St{  
+ int marks;  
+}  
+
+public class Grade extends St{  
+   
+   public Grade(int marks) {
+    this.marks = marks;
+      {System.out.println("instance initializer invoked");}  
+ 
+   }
+   int internal = 20;
+public static void main(String args[]){  
+  
+   Grade g = new Grade(50);  
+   System.out.println("Marks is:"+g.marks);  
+   System.out.println("Internal is:"+g.internal);  
+   System.out.println("Total is:"+ (g.internal+g.marks));  
+   
+}  
+
+}

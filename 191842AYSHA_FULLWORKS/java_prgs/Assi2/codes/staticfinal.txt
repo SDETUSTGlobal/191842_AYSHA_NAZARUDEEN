@@ -1,0 +1,33 @@
+class A 
+{
+    static final int a=2;
+
+    final void m1() 
+    {
+        System.out.println("This is a final method.");
+    }
+}
+
+class B extends A 
+{
+    void dis()
+    { 
+        
+        System.out.println("Impossible");
+    }
+}
+
+public class C extends A
+{
+    void dis()
+    {
+        System.out.println("ERROR");
+    }
+
+public static void main(String args[])
+    {
+    
+        
+        System.out.println(a);
+    }
+}

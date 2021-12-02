@@ -1,0 +1,37 @@
+class A
+{
+  String name;
+  int age;
+  String place;
+
+   A(String name, int age, String place)
+  {
+    this.name = name;
+    this.age = age;
+    this.place = place;
+  }
+}
+
+public class  B
+{
+  String name;
+  int price;
+   A ar;
+  B(String name, int price, A ar)
+  {
+    this.name = name;
+    this.price = price;
+    this.ar = ar;
+  }
+  public static void main(String[] args) {
+    A ar = new A("Paulo Coelho", 74, "Brazil");
+    B b = new B("Veronica Decides to Die", 252, ar);
+    System.out.println("Book Name: "+b.name);
+    System.out.println("Book Price: "+b.price);
+    System.out.println(" About Author : ");
+    System.out.println(" Name: "+b.ar.name);
+    System.out.println(" Age: "+b.ar.age);
+    System.out.println(" Native Place: "+b.ar.place);
+  }
+  
+}

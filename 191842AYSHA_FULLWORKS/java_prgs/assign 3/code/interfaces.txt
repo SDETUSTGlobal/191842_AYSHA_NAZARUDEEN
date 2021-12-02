@@ -1,0 +1,76 @@
+
+class Student 
+{   
+int rno;
+void getn(int n)
+{
+    rno = n;
+}
+void show()
+{
+    System.out.println(" roll no : " +rno);
+}
+}
+
+
+class Score extends Student
+{
+    float m1, m2;
+    void marks( float mark1, float mark2)
+    {
+        m1 = mark1;
+        m2 = mark2;
+    }
+    void showscore()
+    {
+        System.out.println(" Score Sheet : ");
+        System.out.println(" Mark 1 = " +m1);
+        System.out.println(" Mark 2 = " +m2);
+    }
+}
+
+interface Activitypoints
+{
+    float point=5;
+    void dis();
+    default void stud()
+    {
+      System.out.println("Default Method Executed");
+    }
+     static void sh()
+    {
+        System.out.println("Static Method Executed");
+    }
+    
+}
+
+class Finalscore extends Score implements Activitypoints
+{
+    float t;
+    public void dis()
+    {
+        System.out.println(" points = " + point );
+    }
+    void display()
+    { t = m1 + m2 + point;
+    show();
+    showscore();
+    dis();
+     System.out.println(" total  = " + t );
+    }
+}
+
+
+public class Viewmarks
+{
+    public static void main(String args[])
+    {
+        Finalscore st1 = new Finalscore();
+        st1.getn(1);
+        st1.marks(30,45);
+        st1.display();
+        st1.stud();
+        Activitypoints.sh();
+        
+    }
+}

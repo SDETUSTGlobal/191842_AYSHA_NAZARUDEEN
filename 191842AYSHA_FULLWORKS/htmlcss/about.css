@@ -1,0 +1,26 @@
+.about-uni {
+  color: rgb(12, 9, 9);
+  font-size: 30px;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("pic2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#line1 {
+  color: blue;
+  font-style: italic;
+  font-family: cursive;
+  font-size: 40px;
+  border: solid;
+  border-color: black;
+  padding: 10%;
+}
+#line2 {
+  color: rgb(53, 180, 180);
+}
+#heading {
+  color: rgba(0, 0, 0, 0.548);
+  font-size: 80px;
+  text-align: center;
+}

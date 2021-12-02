@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.dep {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("pic1.jpg");
+  background-position: center;
+  background-size: cover;
+}

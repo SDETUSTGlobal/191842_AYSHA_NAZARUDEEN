@@ -1,0 +1,78 @@
+ public class Ob extends Exception{  
+ int d=10,f=30;
+
+ static int c=0;
+ public Ob(String s)
+ {
+    super(s);
+ }
+  
+  
+ void ch(Ob op){  
+ op.d=op.d+10;
+ }  
+ void ch1(int data){  
+ f= f+50;
+ }  
+ 
+    
+static void rec() throws Ob{    
+         
+            
+       c++;
+        if(c>0)
+           {throw new Ob("c is +ve");  } 
+       else
+        {System.out.println(c);  }
+        
+         rec();
+        }
+    
+ public static void main(String args[])
+ throws ClassNotFoundException
+    {
+ try {
+           
+           Class temp=Class.forName("Ob");
+           int b=2;
+Integer j=Integer.valueOf(b);
+
+System.out.println(b+" "+j);  
+            }
+        catch (ClassNotFoundException e) {
+           
+            System.out.println(
+                "Class does not exist");
+        }
+     
+   Ob op=new Ob("c is +ve");  
+ 
+   System.out.println("before  "+op.d);  
+   op.ch(op);
+   System.out.println("after  "+op.d);  
+   System.out.println("before  "+op.f);  
+   op.ch1(50);  
+   System.out.println("after  "+op.f);  
+    
+   int a[]={1,2,3,4,5};
+for(int i=0;i<a.length;i++)
+System.out.println(a[i]);  
+try{
+System.out.println(a[4]/0);
+}catch(ArithmeticException e){System.out.println(e);}  
+    
+ try{
+rec();
+}
+catch( Ob ex)  
+        {  
+            System.out.println("Catched the exception");  
+     System.out.println("Exception: " + ex);  
+        }  
+
+   
+  
+ }  
+}  
+    
+        

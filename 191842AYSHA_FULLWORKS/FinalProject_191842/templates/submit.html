@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <style type="text/css">
+        body{
+            background-image: url(static/s.png);
+            background-size: cover;
+        }
+    .welcome{
+        text-align: center;
+    }
+    .login{
+        font-size:30px;
+    text-align:center;
+    text-transform: uppercase;
+    margin:40px 0;
+    }
+
+</style>
+<h1 class="welcome">WELCOME!</h1>
+</head>
+
+<body>
+
+
+    <h2>
+        Full Name:<span id="p">{{ena}}</span>
+    </h2>
+
+    <h2>
+        UID:<span id="q">{{fui}}</span>
+    </h2>
+    <h2>
+        Company Name:<span id="r">{{gco}}</span>
+    </h2>
+    <h2>
+         Email:<span id="s">{{coe}}</span>
+    </h2>
+    <script>
+
+        document.getElementById("NAME").innerHTML=localStorage.getItem("textvalue1");
+        document.getElementById("UID").innerHTML=localStorage.getItem("textvalue2");
+        document.getElementById("COMPANY").innerHTML=localStorage.getItem("textvalue3");
+        document.getElementById("EMAIL").innerHTML=localStorage.getItem("textvalue4");
+
+    </script>
+</body>
+</html>

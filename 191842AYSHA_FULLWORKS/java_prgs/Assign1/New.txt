@@ -1,0 +1,37 @@
+
+class Fruits{
+    void show()
+    {
+        System.out.println("This is class Fruits");
+    }
+}
+  
+class Apple extends Fruits {
+   
+    void show()
+    {
+        System.out.println("This is subclass Apple");
+    }
+}
+  class Orange extends Fruits {
+   
+    void show()
+    {
+        System.out.println("This is subclass Orange");
+    }
+}
+  
+  
+public class New{
+    public static void main(String[] args)
+    {
+        Fruits obj1 = new Fruits();
+        obj1.show();
+        Fruits obj2 = new Apple();
+        obj2.show();
+         Fruits obj3 = new Orange();
+        obj3.show();
+        
+    }
+}
+    

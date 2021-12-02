@@ -1,0 +1,17 @@
+abstract class Brand
+{
+    abstract void disp();
+    
+}
+public class Nike extends Brand
+{
+    void disp()
+    {
+        System.out.println("Ongoing Prg...");
+    }
+    public static void main(String args[])
+    {
+        Brand b = new Nike();
+        b.disp();
+    }
+}

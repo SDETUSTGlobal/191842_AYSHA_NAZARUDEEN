@@ -1,0 +1,36 @@
+ package pack; 
+interface p
+{
+	void dis();
+}
+ class A{
+	 public void a()
+	 {
+		 System.out.println("thank you");
+	 }
+	 
+ }
+public class S implements p
+{  
+public void dis()
+{
+	System.out.println("hi there");
+}
+public void show()
+{
+	System.out.println("nice to meet you");
+}
+ public static void main(String args[])
+ {  
+
+	S obj =new S();
+	A ob=new A();
+	ob.a();
+	
+	obj.dis();
+	obj.show();
+   }  
+}
+
+        
+ 

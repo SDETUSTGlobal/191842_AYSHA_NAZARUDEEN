@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-image: url("pic2.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+nav{
+    display: flex;
+    padding: 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    padding: 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: darkgreen;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.uni-head{
+width:80%;
+color: white;
+position: absolute;
+top:75%;
+left:25%;
+text-align: center;
+}
+.uni-head h1{
+    font-size: 60px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.uni-head p{
+    font-size: 15px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.visit-in{
+    display: inline;
+    text-decoration: none;
+    color: darkcyan;
+    border:1px solid;
+    border-color: darkred;
+    padding: 12px 34px;
+    position: relative;
+    cursor: pointer;
+
+}
+.visit-in:hover{
+border:3px solid olivedrab;
+background: palegoldenrod;
+}
+

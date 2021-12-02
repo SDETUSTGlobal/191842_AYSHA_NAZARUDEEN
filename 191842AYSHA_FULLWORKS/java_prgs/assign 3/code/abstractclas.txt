@@ -1,0 +1,27 @@
+abstract class A
+{
+    A()
+    {
+        System.out.println(" constructor invoked");
+    }
+    
+	abstract void Open();
+	
+}
+
+public class B extends A
+{
+	void Open()
+	{	
+		System.out.println(" nice to meet you");
+		System.out.println("Thank you");
+	}
+	
+	public static void main(String args[])
+	{
+		System.out.println("Hi there ");
+		B ob=new B();
+		System.out.println("welcome");
+		ob.Open();
+	}
+}

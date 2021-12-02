@@ -1,0 +1,42 @@
+class Super{  
+    int x;
+    Super(int x)
+    {
+        this.x = x;
+    }
+    
+    void show()
+    {
+        System.out.println("Super x : " +x);
+    }
+
+    }
+    
+ class Sup extends Super
+{
+    int y;
+    Sup(int x, int y)
+    {
+        super(x);
+        this.y = y;
+    }
+    
+ void show()
+ {
+  System.out.println("Super x : " +x);
+  System.out.println("Sup y : " +y);
+ }
+}
+
+
+  public class Inher
+   {
+       public static void main(String args[])
+       {
+           Sup s = new Sup(1,10);
+           s.show();
+       }
+   }
+
+
+

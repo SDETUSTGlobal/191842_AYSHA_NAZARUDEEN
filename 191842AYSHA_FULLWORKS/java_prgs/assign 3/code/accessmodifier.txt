@@ -1,0 +1,26 @@
+ class A{  
+private int data=10;
+public int ab = 5;
+protected void dis(){System.out.println("Hello ");}  
+
+void show()
+
+{System.out.println(data);}
+
+public void vie()
+{
+    System.out.println("thank you ");
+}
+    
+}  
+ 
+  
+public class B extends A
+{  
+ public static void main(String args[]){  
+   A obj=new A();  
+   System.out.println(obj.ab); 
+   obj.dis();
+   obj.vie();
+   }  
+}  
